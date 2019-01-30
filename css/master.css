@@ -140,11 +140,11 @@ nav {
   }
   .nav-link-font {
     font-size: 0.8em;
-    text-align: center;
   }
   .nav-link {
     padding-top: 10px;
     width: 16vw;
     margin-right: 2px;
+    text-align: center;
   }
 }
