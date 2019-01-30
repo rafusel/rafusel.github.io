@@ -1,0 +1,99 @@
+* {
+  font-family: 'Work Sans';
+}
+body {
+  margin: 0;
+}
+#title {
+  font-family: 'Alegreya Sans SC';
+  font-size:10vw;
+  color: white;
+  margin: 10vh 0 10px 0;
+  padding: 0;
+  height: 20vh;
+}
+#home {
+  display: grid;
+  justify-items: center;
+  min-height: 100%;
+  max-width: 100%;
+  height: 100vh;
+  width: 100vw;
+  left: 0;
+  top: 0;
+  background-color: #191C21;
+  font-color: white;
+  margin-left: 0px;
+  margin-top: 0px;
+  background-image: url("../schooner.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#me {
+  min-width: 350px;
+  width: 27vw;
+  height: auto;
+  margin: 0;
+
+}
+.header {
+  background-color: #191C21;
+  margin: 0 auto;
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  /*
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 8vh;
+  width: 100vw;*/
+}
+.nav-bar {
+  height: 60px;
+  background-color: ;
+  margin: 0;
+  display: flex;/*
+  padding-left: 10vw;*/
+  background-color: #191C21;
+}
+.nav-link {
+  width: auto;
+  display: inline-block;
+  font-size: 1em;
+  height: 60px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 20px;
+  box-sizing: border-box;
+  transition: all ease-in-out 250ms;
+  margin-left: 2vw;
+}
+ul {
+  list-style-type: none;
+  float: right;
+}
+.nav-link-font {
+  color: white;
+  text-decoration-line: none;
+  font-size: 1em;
+}
+.nav-link-font:visited {
+  color: white;
+  text-decoration-line: none;
+}
+.nav-link:hover {
+  background-color: #3E4858;
+  height: 100%;
+}
+nav {
+  height: 100%;
+}
+#logo {
+  position: relative;
+  height: 100%;
+  float: left;
+  box-sizing: border-box;
+}
