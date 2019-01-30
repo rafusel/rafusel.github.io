@@ -139,9 +139,11 @@ nav {
     height: auto;
   }
   .nav-link-font {
-    font-size: 1em;
+    font-size: 0.8em;
   }
   .nav-link {
-    padding: 0;
+    padding-top: 10px;
+    width: 16vw;
+    margin-right: 2px;
   }
 }
