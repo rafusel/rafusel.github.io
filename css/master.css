@@ -140,6 +140,7 @@ nav {
   }
   .nav-link-font {
     font-size: 0.8em;
+    text-align: center;
   }
   .nav-link {
     padding-top: 10px;
