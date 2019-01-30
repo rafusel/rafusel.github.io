@@ -38,6 +38,7 @@ body {
   background-image: url("../schooner.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   box-sizing: border-box;
 }
 #me {
