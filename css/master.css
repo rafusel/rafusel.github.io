@@ -138,4 +138,7 @@ nav {
   .light {
     height: auto;
   }
+  .nav-link-font {
+    font-size: 0.5em;
+  }
 }
