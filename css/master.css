@@ -3,6 +3,7 @@
 }
 body {
   margin: 0;
+  display: grid;
 }
 #title {
   font-family: 'Alegreya Sans SC';
@@ -97,3 +98,26 @@ nav {
   float: left;
   box-sizing: border-box;
 }
+.dark {
+  width: 100vw;
+  height: 100vh;
+  background-color: #191C21;
+  display: grid;
+  margin: 0;
+  color: white;
+  padding-top: 60px;
+  box-sizing: border-box;
+  justify-items: center;
+}
+.wrapper {
+  width: 60%;
+}
+ .light {
+   width: 100vw;
+   height: 100vh;
+   display: grid;
+   margin: 0;
+   padding-top: 60px;
+   box-sizing: border-box;
+   justify-items: center;
+ }
