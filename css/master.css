@@ -131,3 +131,11 @@ nav {
    box-sizing: border-box;
    justify-items: center;
  }
+ @media screen and (max-width: 992px) {
+  .dark {
+    height: auto;
+  }
+  .light {
+    height: auto;
+  }
+}
