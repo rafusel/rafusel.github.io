@@ -175,8 +175,11 @@ nav {
     display: flex;
   }
   li.nav-link.nav-link-font {
-    padding-left: 1.3em;
+    padding-left: 1.35em;
     justify-content: center;
+  }
+  #tricky {
+    padding-left: 0;
   }
 }
 #one:visited {
