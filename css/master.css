@@ -110,7 +110,7 @@ nav {
 }
 .dark {
   width: 100vw;
-  height: 100vh;
+  height: auto;
   background-color: #191C21;
   display: grid;
   margin: 0;
@@ -118,6 +118,7 @@ nav {
   padding-top: 60px;
   box-sizing: border-box;
   justify-items: center;
+  padding-bottom: 60px;
 }
 .wrapper {
   width: 60%;
@@ -130,6 +131,7 @@ nav {
    padding-top: 60px;
    box-sizing: border-box;
    justify-items: center;
+   padding-bottom: 60px;
  }
  @media screen and (max-width: 992px) {
   .dark {
@@ -142,9 +144,19 @@ nav {
     font-size: 0.8em;
   }
   .nav-link {
-    padding-top: 10px;
+    padding-top: 20px;
     width: 16vw;
     margin-right: 2px;
     text-align: center;
   }
+}
+#one:visited {
+  color: white;
+  text-decoration-line: none;
+}
+.quick-facts {
+  display: grid;
+}
+.quick-facts li {
+  padding: 10px;
 }

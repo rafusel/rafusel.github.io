@@ -13,10 +13,16 @@
     <a href="#home"><img src="logo_transparent.png" alt="A logo goes here." id="logo"></a>
     <nav>
       <ul class="nav-bar">
-        <li class="nav-link"><a href="#about-me" class="nav-link-font">About Me</a></li>
-        <li class="nav-link"><a href="#projects" class="nav-link-font">Software Projects</a></li>
-        <li class="nav-link"><a href="#next" class="nav-link-font">What's Next?</a></li>
-        <li class="nav-link" id="nav-contact"><a href="#contact" class="nav-link-font">Contact Me</a></li>
+        <!--
+        <a href="#about-me"><li class="nav-link"><a href="#about-me" class="nav-link-font">About Me</a></li></a>
+        <a href="#projects"><li class="nav-link"><a href="#projects" class="nav-link-font">Software Projects</a></li></a>
+        <a href="#next"><li class="nav-link"><a href="#next" class="nav-link-font">What's Next?</a></li></a>
+        <a href="#contact"><li class="nav-link" id="nav-contact"><a href="#contact" class="nav-link-font">Contact Me</a></li></a>
+      -->
+      <a href="#about-me"><li class="nav-link nav-link-font">About Me</li></a>
+      <a href="#projects"><li class="nav-link nav-link-font">Software Projects</li></a>
+      <a href="#next"><li class="nav-link nav-link-font">What's Next?</li></a>
+      <a href="#contact"><li class="nav-link nav-link-font" id="nav-contact">Contact Me</li></a>
       </ul>
     </nav>
   </header>
@@ -27,13 +33,25 @@
     <div class="dark" id="about-me">
       <div class="wrapper">
       <h1>About Me</h1>
-      <p>Hello! My name is Lewis and I am a second year Software Engineering
-         and Management student at McMaster University.  I LOVE software
-         engineering and I am constantly striving to learn more. Outside of
-         the classroom I enjoy hucking a few disks on my Ultimate frisbee team
-         and bouldering at my local gym. Currently I am learning to swim properly
-         so that I can combine my love of running and cycling and transition to
-         triathalons.</p>
+      <div class="quick-facts">
+        <h2>Quick Facts</h2>
+        <ul>
+          <li><strong>School:</strong> McMaster University</li>
+          <li><strong>Program:</strong> Software Engineering and Management (co-op)</li>
+          <li><strong>Currently Residing:</strong> Hamilton, ON</li>
+          <li><strong>Favourite Language:</strong> Python/C</li>
+          <li><strong>Oxford Comma?:</strong> It looks right, feels right, and is right.</li>
+        </ul>
+      </div>
+      <h2>A little more about me</h2>
+      <p>Hello! My name is Lewis and I love software
+         engineering. So far I have
+         managed to pick up some skills in C, Python, Java, PHP, HTML, CSS, JavaScript, and
+         NASM assembly. I am most passionate about designing software which creates positive change in the world.</p>
+      <p>Outside of the classroom I enjoy hucking a few disks on my Ultimate frisbee team
+         and bouldering at my local gym. Currently I am learning to swim properly (i.e. not sink like a rock)
+         so that I can combine my love of running and cycling, and transition to
+         triathalons. I spend the rest of my free time on <a href="#projects" id="one">projects</a> which you can check out below.</p>
       </div>
     </div>
     <div class="light" id="projects">
@@ -62,12 +80,13 @@
     <div class="dark" id="next">
       <div class="wrapper">
       <h1>What's Next?</h1>
-      <p>to be completed</p>
+      <p>Coming soon...</p>
     </div>
     </div>
     <div class="light" id="contact">
       <div class="wrapper">
       <h1>Shoot me an email...</h1>
+      <p>Please feel free to reach out to me for anything </p>
       <!--
       <p>Fill out the form below and I will get back to you as soon as I can.</p>
       <form class="contact-form" action="index.html" method="post">
