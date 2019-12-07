@@ -1,0 +1,32 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.hero {
+    background-image: url(../schooner.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.hero-content {
+    color: white;
+}
+
+#me {
+    max-height: 45vh;
+    max-width: 50vw;
+}
+
+.white-font {
+    color: white;
+}
+
+.black-font {
+    color: black;
+}
+
+.button {
+    border-color: #1e7e34 !important;
+}
