@@ -1,0 +1,22 @@
+html {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#board {
+    border: 1px solid black;
+    width: 450px !important;
+    height: 450px !important;
+}
+
+.col {
+    height: 50px;
+    border: 1px solid black;
+    line-height: 50px;
+}
+
+.x-background {
+    background-color: #9018e0;
+}
