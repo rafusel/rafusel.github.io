@@ -28,11 +28,6 @@ function preGameStyling() {
         return elems;
     }
 
-    //Function to get a div from the puzzle at row i, column j, 9x9 layout.
-    function getElemAt(i, j) {
-        return document.getElementById(i.toString() + " " + j.toString());
-    }
-
     //Set the 3x3 layout X on the board to have different coloured background.
     var quadrants = [[0, 0], [0, 2], [1, 1], [2, 0], [2, 2]];
     for (var i = 0; i < quadrants.length; i++) {
@@ -51,4 +46,10 @@ function preGameStyling() {
 
     //Once all the styling has loaded, display the blank board.
     document.getElementsByTagName("body")[0].style.display = "block";
+}
+
+
+//Function to get a div from the puzzle at row i, column j, 9x9 layout.
+function getElemAt(i, j) {
+    return document.getElementById(i.toString() + " " + j.toString());
 }
