@@ -65,14 +65,30 @@ function newPuzzle() {
     updateEntirePuzzle(puzzle);
 }
 
+function hideButtons() {
+    document.getElementById("inputs").style.display = "none";
+    document.getElementById("buttons").style.display = "none";
+    document.getElementById("solving").style.display = "block";
+}
+
 function solvePuzzle() {
-    document.getElementById("new-puzzle").removeEventListener("click", newPuzzle, true);
-    document.getElementById("solve-puzzle").removeEventListener("click", solvePuzzle, true);
-    fullSolveWithWait(puzzle);
-    console.log("hi");
+    hideButtons();
+    var speed = getSpeed();
+    fullSolveWithWait(puzzle, speed);
 }
 
 function addListeners() {
-    document.getElementById("new-puzzle").addEventListener("click", newPuzzle, true);
-    document.getElementById("solve-puzzle").addEventListener("click", solvePuzzle, true);
+    document.getElementById("buttons").style.display = "block";
+    document.getElementById("inputs").style.display = "block";
+    document.getElementById("solving").style.display = "none";
+}
+
+function getSpeed() {
+    var speed = parseInt(document.getElementById("speed").value, 10);
+    console.log(speed);
+    if (speed > 0)  {
+        return speed;
+    } else {
+        return 20;
+    }
 }

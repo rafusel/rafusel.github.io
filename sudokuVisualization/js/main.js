@@ -1,6 +1,5 @@
 function main() {
     preGameStyling(); //From styling.js
-    var puzzle;
     puzzle = generatePuzzle();
     updateEntirePuzzle(puzzle); //From util.js
     document.getElementById("new-puzzle").addEventListener("click", newPuzzle, true);
@@ -9,4 +8,5 @@ function main() {
 }
 
 //Execute the main function when the document has loaded.
- document.onload = main();
+var puzzle;
+document.onload = main();

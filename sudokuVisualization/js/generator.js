@@ -8,7 +8,6 @@ function generatePuzzle() {
     
     
     var toRemove = new ArraySet(new Set()); //Create a set of indices to remove
-    console.log(toRemove);
     
     while (toRemove.size < nRemove) {
         var i = getRandomInt(0, 9);

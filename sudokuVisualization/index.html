@@ -127,17 +127,19 @@
             <div class="col">5</div>
             <div class="col">6</div>
         </div>
-
     </div>
 
-    <div class="container text-center" style="padding-top: 30px;">
+    <div class="container text-center" style="padding-top: 30px;" id="buttons">
         <button type="button" class="btn btn-primary" id="new-puzzle">Generate New Puzzle</button>
         <button type="button" class="btn btn-primary" id="solve-puzzle">Solve Puzzle</button>
-
     </div>
 
-    <div class="container text-center">
-
+    <div class="container text-center" style="padding-top: 30px;" id="inputs">
+        <label for="speed">Milliseconds Between Updates: </label><input type="number" name="speed" id="speed" placeholder="Defaults to 20">
+    </div>
+        
+    <div class="container text-center" style="display: none; padding-top: 30px;" id="solving">
+        <p>Solving this puzzle...</p>
     </div>
     <script src="js/styling.js"></script>
     <script src="js/generator.js"></script>

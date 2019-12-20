@@ -2,7 +2,7 @@
 SOLVER
 */
 // Function that takes in the puzzle as a 2D array and returns the solution.
-async function fullSolveWithWait(puzzle) {
+async function fullSolveWithWait(puzzle, speed) {
     var backtrack = [];
     var elemsTried = {};
     var i = 0;
@@ -27,13 +27,13 @@ async function fullSolveWithWait(puzzle) {
                     //puzzle[i][j] = min(possibleElems)
                     puzzle[i][j] = Array.from(possibleElems)[getRandomInt(0, possibleElems.size)];
                     updatePuzzleElem(puzzle, i, j, false);
-                    await sleep(1);
+                    await sleep(speed);
                     elemsTried[toKey(i, j)].add(puzzle[i][j]);
                     j += 1;
                 } else { //This element does not give a possible solution: backtrack
                     puzzle[i][j] = 0; //Reset the current element
                     updatePuzzleElem(puzzle, i, j, false);
-                    await sleep(1);
+                    await sleep(speed);
                     backtrack.pop(); //Remove this an element we need to backtrack to
                     delete elemsTried[toKey(i, j)];
                     i = backtrack[backtrack.length - 1][0]; //Get the new values we need to backtrack to
